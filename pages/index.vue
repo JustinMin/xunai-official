@@ -114,16 +114,14 @@ export default {
         pageSize,
         caseTitle,
       };
-      const { rows, total } = await request.get(
-        `/home/getCaseList?${stringify(params)}`
-      );
+      this.locked();
+      const { rows, total } = await request.get(`/home/getCaseList?${stringify(params)}`);
       this.unlocked();
-      this.setMoreData(rows);
+      this.caseList = rows;
       this.setTotal(total);
     },
     handelLandMore() {
       if(this.isLocked()) return; /* 如果正在请求 则锁住请求 */
-      console.log(this.hasMore)
        if (this.hasMore) {
         this.locked(); /* 使用锁 锁住 */
         this.handelSearch({
@@ -136,8 +134,8 @@ export default {
     onSearch(caseTitle){
       this.handelSearch({
           caseTitle,
-          pageSize:10,
           current:1,
+          pageSize:10,
       })
     },
     getCurrentStart() {

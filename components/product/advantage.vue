@@ -6,7 +6,10 @@
       <div class="head_text">Our Absolute Advantage</div>
     </div>
     <div class="list">
-      <div class="item">
+      <nuxt-link 
+        to="/product/1" 
+        class="item"
+      >
         <div class="advantage_content">
           <div class="line odd"/>
           <div class="text">智能穴位识别</div>
@@ -15,8 +18,11 @@
           src="~assets/images/product/advantage_1.png"
           class="item_icon"
         >
-      </div>
-      <div class="item">
+      </nuxt-link>
+      <nuxt-link 
+        to="/product/2" 
+        class="item"
+      >
         <img 
           src="~assets/images/product/advantage_2.png"
           class="item_icon"
@@ -25,8 +31,11 @@
           <div class="text">治疗案例云享</div>
           <div class="line even"/>
         </div>
-      </div>
-      <div class="item">
+      </nuxt-link>
+      <nuxt-link 
+        to="/product/3"
+        class="item"
+      >
         <div class="advantage_content">
           <div class="line odd"/>
           <div class="text">养生智库推荐</div>
@@ -35,8 +44,11 @@
           src="~assets/images/product/advantage_3.png"
           class="item_icon"
         >
-      </div>
-      <div class="item">
+      </nuxt-link>
+      <nuxt-link 
+        to="/product/4" 
+        class="item"
+      >
         <img 
           src="~assets/images/product/advantage_4.png"
           class="item_icon"
@@ -45,7 +57,7 @@
           <div class="text">中医精髓数据化</div>
           <div class="line even"/>
         </div>
-      </div>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -104,6 +116,14 @@
         align-items: center;
         width: 100%;
         height: 61px;
+        color:rgba(10,32,43,1);
+        &:hover{
+           color:rgba(255,255,255,1);
+           background:rgba(67,197,202,1);
+           .line{
+             background-color: rgba(255,255,255,1)
+           }
+        }
         .line{
           width:25px;
           height:1px;
@@ -119,7 +139,6 @@
         .text{
           font-size:13px;
           font-weight:400;
-          color:rgba(10,32,43,1);
           line-height:18px;
         }
       }

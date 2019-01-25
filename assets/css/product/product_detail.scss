@@ -1,0 +1,17 @@
+.product_detail {
+  display: flex;
+  flex-direction: column;
+  background: rgba(238, 243, 245, 1);
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 46px;
+  .product_detail_bg{
+      width: 100%;
+  }
+  .product_content {
+    margin-top: -62px;
+    box-sizing: border-box;
+    width: 750px;
+    background: rgba(255, 255, 255, 1);
+  }
+}

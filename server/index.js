@@ -8,6 +8,7 @@ import bodyParser from 'koa-bodyparser';
 import json from 'koa-json';
 import home from './interface/home';
 import acupoint from './interface/acupoint';
+import product from './interface/product';
 
 const app = new Koa()
 const host = process.env.HOST || '127.0.0.1'
@@ -34,6 +35,7 @@ async function start() {
   }
   app.use(home.routes()).use(home.allowedMethods())
   app.use(acupoint.routes()).use(acupoint.allowedMethods())
+  app.use(product.routes()).use(product.allowedMethods())
   app.use(ctx => {
     ctx.status = 200 // koa defaults to 404 when it sees that status is unset
 
