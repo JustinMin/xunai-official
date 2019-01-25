@@ -7,7 +7,7 @@ export const devUrl = 'https://xunaiv2.szaiaitie.com';
 
 export const prodUrl = 'https://dyxunapi.szaiaitie.com';
 
-export const isProd = process.env.NODE_ENV === "production";
+export const isProd = 'production' === "production";
 
 export const apiUrl = isProd ? prodUrl : devUrl;
 
