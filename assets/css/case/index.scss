@@ -1,0 +1,23 @@
+.caseDetail_container {
+  padding-top: 19px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 28px;
+  .left {
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-left: 31px;
+    padding-right: 31px;
+    padding-bottom: 28px;
+    width: 563px;
+    background:rgba(255, 255, 255, 1);
+    box-shadow:0px 3px 6px 0px rgba(199, 199, 199, 1);
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 138px;
+    margin-left: 13px;
+  }
+}

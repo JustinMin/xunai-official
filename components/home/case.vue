@@ -1,0 +1,236 @@
+<template>
+  <div class="acupoint-container">
+    <div class="title">
+      <div class="text">优选案例</div>
+      <div class="search_bar">
+        <input
+          v-model="searchVal"
+          type="text"
+          class="search_input"
+          placeholder="请输入案例名称"
+        >
+        <img
+          v-if="searchVal"
+          class="reset_icon"
+          src="~assets/images/public/delete.png"
+          @click="handelReset"
+        >
+        <div 
+          class="search_btn" 
+          @click="handelSearch"
+        >
+          <div class="search_icon"/>
+        </div>
+      </div>
+    </div>
+    <nuxt-link
+      v-for="(item,index) in caselist"
+      :key="index"
+      :to="item.id|prefix" 
+      class="item"
+    >
+      <img
+        :src="item.casePic" 
+        class="acupoint_picture"
+      >
+      <div class="item_content">
+        <div class="item_title"> {{ item.caseTitle }} </div>
+        <p class="item_text">{{ item.caseDetail| limit }} </p>
+        <div class="item_footer">
+          <div class="item_footer_content">
+            <img 
+              :src="item.casePic" 
+              class="item_footer_logo"
+            >
+            <div class="item_copany">{{ item.nickName }}</div>
+          </div>
+          <div class="item_footer_date">{{ item.addTime }}</div>
+        </div>
+      </div>
+    </nuxt-link>
+    <slot
+      name="landMore"
+    />
+  </div>
+</template>
+
+<script>
+export default {
+ filters:{
+   limit(value) {
+    if (!value) return ''
+    value = value.toString()
+    return value.length >20 ? value.substring(0,50)+'...':value
+  },
+  prefix(id){
+    return `/case/${id}`
+  }
+ },
+ props:{
+    caselist:{
+      type:Array,
+      default(){
+        return []
+      }
+    },
+    total:{
+      type:Number,
+      default(){
+        return 0
+      }
+    }
+ },
+ data(){
+   return {
+     searchVal:''
+   }
+ },
+ methods: {
+   handelSearch(){
+     if(!this._hasSearchValue())  return;
+     const currentVal = this.searchVal;
+     this.$emit('search',currentVal)
+   },
+   handelReset(){
+     this._rersetValue()
+     this.$emit('search','')
+   },
+   _rersetValue(){
+     this.searchVal = ''
+   },
+   _hasSearchValue(){
+     return this.searchVal ? true : false;
+   }
+ },
+}
+</script>
+
+
+<style lang="scss" scoped>
+.acupoint-container {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 6px 0px rgba(199, 199, 199, 1);
+  .title {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 27px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(10, 32, 43, 1);
+    line-height: 25px;
+    .search_bar{
+      display: flex;
+      height: 25px;
+      position: relative;
+      .search_input{
+        border: none;
+        outline: none;
+        width:141px;
+        height:100%;
+        background:rgba(238,243,245,1);
+        padding-left: 10px;
+        &::-webkit-input-placeholder {
+          font-size:11px;
+          font-weight:400;
+          color:rgba(192,196,204,1);
+          line-height:16px;
+          padding-left: 6px;
+        }
+      }
+      .reset_icon{
+        position:absolute;
+        right:60px;
+        z-index: 999;
+        width: 25px;
+        height: 25px;
+      }
+      .search_btn{
+        display: flex;
+        box-sizing: border-box;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        padding: 6px 16px;
+        height:100%;
+        background:rgba(67,197,202,1);
+        .search_icon{
+          width: 13px;
+          height: 13px;
+          background-size: 13px 13px;
+          background-repeat: no-repeat;
+          background-image: url("~assets/images/index/search.png")
+        }
+      }
+    }
+  }
+  .item {
+    padding-left: 30px;
+    padding-bottom: 24px;
+    padding-right: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .acupoint_picture {
+      width: 151px;
+      height: 98px;
+    }
+    .item_content {
+      padding-left: 13px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width:342px;
+      .item_title{
+        width:100%;
+        font-size: 13px;
+        font-weight: 600;
+        color: rgba(10, 32, 43, 1);
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+      }
+      .item_text{
+        width:100%;
+        height:36px;
+        font-size:11px;
+        font-weight:400;
+        color:rgba(96,98,102,1);
+        line-height:18px;
+        word-wrap: break-word;
+      }
+      .item_footer{
+        margin-top: 14px;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size:10px;
+        font-weight:400;
+        color:rgba(144,147,153,1);
+        line-height:14px;
+        .item_footer_content{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .item_footer_logo{
+            margin-top: -2px;
+            width:19px;
+            height:19px;
+            border-radius: 50%;
+          }
+          .item_copany{
+            padding-left: 6px;
+          }
+        }
+      }
+    }
+  }
+}
+</style>
+

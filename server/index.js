@@ -1,11 +1,23 @@
-
-const Koa = require('koa')
-const consola = require('consola')
-const { Nuxt, Builder } = require('nuxt')
+import Koa from 'koa';
+const consola = require('consola');
+const {
+  Nuxt,
+  Builder
+} = require('nuxt');
+import bodyParser from 'koa-bodyparser';
+import json from 'koa-json';
+import home from './interface/home';
+import acupoint from './interface/acupoint';
 
 const app = new Koa()
 const host = process.env.HOST || '127.0.0.1'
 const port = process.env.PORT || 3000
+app.keys = ['xun_ai', 'keyskeys']
+app.proxy = true;
+app.use(bodyParser({
+  extendTypes: ['json', 'form', 'text']
+}))
+app.use(json())
 
 // Import and Set Nuxt.js options
 let config = require('../nuxt.config.js')
@@ -20,7 +32,8 @@ async function start() {
     const builder = new Builder(nuxt)
     await builder.build()
   }
-
+  app.use(home.routes()).use(home.allowedMethods())
+  app.use(acupoint.routes()).use(acupoint.allowedMethods())
   app.use(ctx => {
     ctx.status = 200 // koa defaults to 404 when it sees that status is unset
 

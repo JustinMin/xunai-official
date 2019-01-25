@@ -2,6 +2,11 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import { interopDefault } from './utils'
 
+const _31f25182 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages_about" */))
+const _49ffec10 = () => interopDefault(import('..\\pages\\acupoint.vue' /* webpackChunkName: "pages_acupoint" */))
+const _bb0c4544 = () => interopDefault(import('..\\pages\\product\\index.vue' /* webpackChunkName: "pages_product_index" */))
+const _38c4a9ff = () => interopDefault(import('..\\pages\\case\\_id.vue' /* webpackChunkName: "pages_case__id" */))
+const _42fb9f46 = () => interopDefault(import('..\\pages\\product\\_id.vue' /* webpackChunkName: "pages_product__id" */))
 const _51aa2c47 = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
@@ -62,6 +67,26 @@ export function createRouter() {
     scrollBehavior,
 
     routes: [{
+      path: "/about",
+      component: _31f25182,
+      name: "about"
+    }, {
+      path: "/acupoint",
+      component: _49ffec10,
+      name: "acupoint"
+    }, {
+      path: "/product",
+      component: _bb0c4544,
+      name: "product"
+    }, {
+      path: "/case/:id?",
+      component: _38c4a9ff,
+      name: "case-id"
+    }, {
+      path: "/product/:id",
+      component: _42fb9f46,
+      name: "product-id"
+    }, {
       path: "/",
       component: _51aa2c47,
       name: "index"

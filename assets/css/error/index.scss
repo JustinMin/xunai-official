@@ -1,0 +1,33 @@
+.error_container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 137px;
+    padding-bottom: 223px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background:rgba(255, 255, 255, 1);
+    .error_text{
+        font-size:13px;
+        font-weight:400;
+        color:rgba(10, 32, 43, 1);
+        line-height:31px;
+    }
+    .return_back_btn{
+        margin-top: 10px;
+        text-align: center;
+        width:88px;
+        height:20px;
+        background:rgba(67, 197, 202, 1);
+        border-radius:11px;
+        font-size:10px;
+        font-weight:400;
+        color:rgba(255, 255, 255, 1);
+        line-height:20px;
+    }
+}

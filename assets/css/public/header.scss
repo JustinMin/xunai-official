@@ -1,0 +1,39 @@
+  .m-header {
+    padding: 10px 0;
+    font-size: 13px;
+    width: 100%;
+    background: rgba(10, 32, 43, 1);
+    a{
+      color:#fff;
+      &.nuxt-link-exact-active {
+        color: #43C5CA;
+      }
+    }
+    .title {
+      padding-left: 20%;
+    }
+
+    .grid-content {
+      text-align: center;
+
+      .search_icon {
+        width: 15px;
+        height: 15px;
+      }
+    }
+
+    .logo_content {
+      display: flex;
+      justify-content: center;
+
+      .logo {
+        margin-top: -3px;
+        width: 23px;
+        height: 23px;
+      }
+
+      .logo_text {
+        padding-left: 14px;
+      }
+    }
+  }

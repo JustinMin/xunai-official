@@ -1,0 +1,47 @@
+.content_container {
+  background: rgba(255, 255, 255, 1);
+
+  .title {
+    padding-top: 22px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(10, 32, 43, 1);
+  }
+
+  .content {
+    padding-bottom: 23px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .userInfo {
+    padding-top: 21px;
+    padding-bottom: 19px;
+    display: flex;
+    align-items: center;
+
+    .userPic {
+      width: 28px;
+      height: 28px;
+    }
+
+    .user {
+      margin-left: 10px;
+
+      .userName {
+        font-size: 11px;
+        font-weight: 400;
+        color: rgba(10, 32, 43, 1);
+        line-height: 16px;
+      }
+
+      .addTime {
+        font-size: 10px;
+        font-weight: 400;
+        color: rgba(144, 147, 153, 1);
+        line-height: 14px;
+      }
+    }
+  }
+}

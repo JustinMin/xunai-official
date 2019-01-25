@@ -1,0 +1,18 @@
+.container{
+    width: 100%;
+    .content{
+        display: flex;
+        justify-content: center;
+        margin-top: 44px;
+        padding-bottom: 73px;
+        .left{
+            width: 563px;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 138px;
+            margin-left: 13px;
+        }
+    }
+}
