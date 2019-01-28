@@ -16,10 +16,10 @@ router.get('/bodylist', async (ctx) => {
 
 router.get('/list', async (ctx) => {
   const {
-    name
+    acupointName
   } = ctx.request.query;
   const data = await getAcupoint({
-    acupointName: name,
+    acupointName,
   });
   ctx.body = data;
 });

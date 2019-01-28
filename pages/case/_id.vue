@@ -30,8 +30,7 @@ import CaseTag from "@/components/case/tag";
 
 export default {
  async asyncData(ctx) {
-   const { params } =ctx;
-    const { data:caseDetail } = await ctx.$axios.get(`/home/getCaseDetail?${stringify(params)}`)
+    const { data:caseDetail } = await ctx.$axios.get(`/home/getCaseDetail?${stringify(ctx.params)}`)
      const CaseParams={
       current:1,
       pageSize:20,

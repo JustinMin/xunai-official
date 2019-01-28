@@ -31,7 +31,9 @@ export default {
     handelSearch(){
        if(!this.searchVal) return;
        const currentVal = this.searchVal;
-       this.$emit('change',currentVal)
+       this.$emit('change',{
+         acupointName:currentVal
+       })
     },
     handelReset() {
        this.searchVal = ''

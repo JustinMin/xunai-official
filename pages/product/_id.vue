@@ -37,6 +37,10 @@ export default {
        detail:res.data,
      }
   },
+  validate({ params }) {
+    // 必须是number类型
+    return /^\d+$/.test(params.id);
+  },
   data(){
     return {
       detail:{}

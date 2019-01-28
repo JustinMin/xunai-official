@@ -25,7 +25,7 @@
 </template>
 
 <script>
-
+import { stringify } from "qs";
 import SearchBar  from "@/components/acupoint/searchBar";
 import AcupointList from "@/components/acupoint/acupointList";
 import ImageView from "@/components/acupoint/imageView";
@@ -56,10 +56,10 @@ export default {
     }
   },
   methods: {
-     async handelSearch(name){
-        const data = await request.get('/acupoint/list',{
-            name
-        });
+     async handelSearch(params){
+        const {
+          data,
+        } = await this.$axios.get(`/acupoint/list?${stringify(params)}`);
         this.is_body_show = false;
         this.acupointlist =  data;
       },

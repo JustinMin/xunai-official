@@ -115,7 +115,12 @@ export default {
         caseTitle,
       };
       this.locked();
-      const { rows, total } = await request.get(`/home/getCaseList?${stringify(params)}`);
+      const {
+        data:{
+          rows,
+          total
+        }
+      } = await this.$axios.get(`/home/getCaseList?${stringify(params)}`);
       this.unlocked();
       this.caseList = rows;
       this.setTotal(total);
