@@ -15,7 +15,7 @@
   width: 100%;
   .advertising{
     width: 100%;
-    height: 125px;
+    height: 200px;
   }
 }
 </style>

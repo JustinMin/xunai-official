@@ -3,6 +3,7 @@
     <el-col :span="24">
       <el-carousel 
         indicator-position="none"
+        height="500px"
       >
         <el-carousel-item 
           v-for="item in list" 

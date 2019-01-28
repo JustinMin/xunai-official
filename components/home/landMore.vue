@@ -18,13 +18,13 @@ export default {
 
 <style lang="scss" scoped>
 .land_more{
-  padding-bottom: 21px;
+  padding-bottom: 34px;
   width: 100%;
   text-align: center;
-  font-size:11px;
+  font-size:18px;
   font-weight:400;
   color:rgba(144,147,153,1);
-  line-height:16px;
+  line-height:25px;
   background:rgba(255,255,255,1);
 }
 </style>

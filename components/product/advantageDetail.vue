@@ -36,16 +36,16 @@ export default {
   padding: 40px 68px 117px;
   .title {
     text-align: center;
-    font-size: 23px;
-    font-weight: 400;
-    color: rgba(51, 51, 51, 1);
-    line-height: 31px;
+    font-size:36px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height:50px;
   }
   .content{
-      font-size:10px;
+      font-size:16px;
       font-weight:400;
       color:rgba(51,51,51,1);
-      line-height:16px;
+      line-height:26px;
       .item{
         padding-top: 20px;
       }

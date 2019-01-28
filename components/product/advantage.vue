@@ -64,7 +64,7 @@
 
 <style lang="scss" scoped>
 .advantage_container{
-  margin-top: 73px;
+  margin-top: 116px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -77,26 +77,26 @@
     align-items: center;
     .title{
       text-align: center;
-      font-size:18px;
+      font-size:28px;
       font-weight:400;
       color:rgba(10,32,43,1);
-      line-height:25px;
+      line-height:40px;
     }
     .line{
-      margin-top: 8px;
-      width:92px;
+      margin-top: 13px;
+      width:147px;
       border-bottom:1px solid rgba(192,196,204,1);
     }
     .head_text{
       padding-top: 5px;
-      font-size:9px;
+      font-size:14px;
       font-weight:400;
       color:rgba(144,147,153,1);
-      line-height:13px;
+      line-height:20px;
     }
   }
   .list{
-    margin-top: 25px;
+    margin-top: 32px;
     width:100%;
     display: flex;
     justify-content: space-between;
@@ -106,8 +106,8 @@
       display: flex;
       flex-direction: column;
       .item_icon{
-        width:175px;
-        height:200px;
+        width:290px;
+        height:332px;
       }
       .advantage_content{
         display: flex;
@@ -118,14 +118,16 @@
         height: 61px;
         color:rgba(10,32,43,1);
         &:hover{
-           color:rgba(255,255,255,1);
            background:rgba(67,197,202,1);
+           .text{
+             color:rgba(255,255,255,1);
+           }
            .line{
              background-color: rgba(255,255,255,1)
            }
         }
         .line{
-          width:25px;
+          width:40px;
           height:1px;
           background:rgba(67,197,202,1);
           border-radius:1px;
@@ -137,9 +139,10 @@
           }
         }
         .text{
-          font-size:13px;
+          font-size:20px;
           font-weight:400;
-          line-height:18px;
+          color:rgba(10,32,43,1);
+          line-height:28px;
         }
       }
     }

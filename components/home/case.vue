@@ -108,46 +108,46 @@ export default {
 
 <style lang="scss" scoped>
 .acupoint-container {
-  width: 100%;
   box-sizing: border-box;
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 3px 6px 0px rgba(199, 199, 199, 1);
   .title {
     display: flex;
     justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 27px;
+    padding-left: 48px;
+    padding-right: 43px;
     padding-top: 14px;
     padding-bottom: 12px;
-    font-size: 18px;
+    font-size:28px;
     font-weight: 600;
     color: rgba(10, 32, 43, 1);
-    line-height: 25px;
+    line-height: 40px;
     .search_bar{
       display: flex;
-      height: 25px;
+      height: 40px;
       position: relative;
       .search_input{
         border: none;
         outline: none;
-        width:141px;
+        width:226px;
         height:100%;
         background:rgba(238,243,245,1);
         padding-left: 10px;
+        font-size: 18px;
         &::-webkit-input-placeholder {
-          font-size:11px;
+          font-size:18px;
           font-weight:400;
           color:rgba(192,196,204,1);
-          line-height:16px;
-          padding-left: 6px;
+          line-height:25px;
+          padding-left: 10px;
         }
       }
       .reset_icon{
         position:absolute;
         right:60px;
         z-index: 999;
-        width: 25px;
-        height: 25px;
+        width: 40px;
+        height: 40px;
       }
       .search_btn{
         display: flex;
@@ -159,9 +159,9 @@ export default {
         height:100%;
         background:rgba(67,197,202,1);
         .search_icon{
-          width: 13px;
-          height: 13px;
-          background-size: 13px 13px;
+          width: 20px;
+          height: 20px;
+          background-size: 20px 20px;
           background-repeat: no-repeat;
           background-image: url("~assets/images/index/search.png")
         }
@@ -169,59 +169,57 @@ export default {
     }
   }
   .item {
-    padding-left: 30px;
-    padding-bottom: 24px;
+    padding-left: 48px;
+    padding-bottom: 38px;
     padding-right: 27px;
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
     .acupoint_picture {
-      width: 151px;
-      height: 98px;
+      width: 241px;
+      height: 157px;
     }
     .item_content {
       padding-left: 13px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width:342px;
       .item_title{
         width:100%;
-        font-size: 13px;
-        font-weight: 600;
-        color: rgba(10, 32, 43, 1);
-        line-height: 20px;
+        font-size:20px;
+        font-weight:600;
+        color:rgba(10,32,43,1);
+        line-height:32px;
         overflow: hidden;
         text-overflow:ellipsis;
         white-space: nowrap;
       }
       .item_text{
         width:100%;
-        height:36px;
-        font-size:11px;
+        font-size:18px;
         font-weight:400;
         color:rgba(96,98,102,1);
-        line-height:18px;
+        line-height:29px;
         word-wrap: break-word;
       }
       .item_footer{
-        margin-top: 14px;
+        margin-top: 18px;
         width:100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        font-size:10px;
+        font-size:16px;
         font-weight:400;
         color:rgba(144,147,153,1);
-        line-height:14px;
+        line-height:22px;
         .item_footer_content{
           display: flex;
           justify-content: center;
           align-items: center;
           .item_footer_logo{
             margin-top: -2px;
-            width:19px;
-            height:19px;
+            width:30px;
+            height:30px;
             border-radius: 50%;
           }
           .item_copany{

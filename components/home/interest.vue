@@ -38,26 +38,26 @@ export default {
   background:rgba(255,255,255,1);
   box-shadow:0px 3px 6px 0px rgba(199,199,199,1);
   .title{
-    padding-top: 11px;
-    padding-left: 13px;
-    padding-bottom: 7px;
-    font-size:18px;
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-bottom: 11px;
+    font-size:28px;
     font-weight:400;
     color:rgba(10,32,43,1);
-    line-height:25px;
+    line-height:40px;
     border-bottom:1px solid rgba(235,238,245,1);
   }
   .list{
-      padding-left: 13px;
-      padding-bottom: 13px;
-      font-size:10px;
+      padding-top: 20px;
+      padding-bottom: 21px;
+      padding-right: 20px;
+      padding-left: 20px;
       font-weight:400;
       color:rgba(10,32,43,1);
       line-height:14px;
       .item{
-        width:113px;
-        padding-top: 8px;
-        font-size:10px;
+        padding-top: 13px;
+        font-size:16px;
         overflow: hidden;
         text-overflow:ellipsis;
         white-space: nowrap;

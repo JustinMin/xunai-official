@@ -101,35 +101,35 @@ export default {
     background:rgba(112,143,226,1);
     color:rgba(255,255,255,1);
     .find_point_icon{
-      width: 56px;
-      height: 56px;
+      width: 90px;
+      height: 90px;
     }
     .find{
-      padding-top: 4px;
-      font-size:16px;
+      padding-top: 6px;
+      font-size:26px;
       font-weight:600;
       color:rgba(255,255,255,1);
-      line-height:23px;
+      line-height:37px;
     }
     .total{
-      padding-top: 4px;
-      font-size:9px;
+      padding-top: 6px;
+      font-size:14px;
       font-weight:400;
       color:rgba(255,255,255,1);
-      line-height:13px;
+      line-height:20px;
     }
   }
   .find_more{
     text-align: center;
-    margin: 0 6px;
-    line-height: 30px;
-    font-size:9px;
+    margin: 0 12px;
+    line-height: 46px;
+    font-size:14px;
     font-weight:400;
     color:rgba(10,32,43,1);
-    height: 30px;
+    height: 46px;
     border-top:1px solid rgba(192,196,204,1);
     .more_icon{
-      margin-left: 3px;
+      margin-left: 8px;
     }
   }
   .acupoint_list{
@@ -147,19 +147,18 @@ export default {
         justify-content: center;
         align-items: center;
         .acupoint_name{
-          padding-top: 19px;
-          font-size:10px;
-          font-weight:400;
+          padding-top: 30px;
+          font-size:16px;
           color:rgba(10,32,43,1);
-          line-height:14px;
+          line-height:22px;
         }
         .body_name{
           padding-top: 6px;
-          padding-bottom: 9px;
-          font-size:9px;
+          padding-bottom: 15px;
+          font-size:14px;
           font-weight:400;
           color:rgba(144,147,153,1);
-          line-height:13px;
+          line-height:20px;
         }
       }
     }

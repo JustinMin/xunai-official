@@ -88,6 +88,7 @@
     width: 100%;
   }
   .content{
+    padding-top: 63px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -95,33 +96,33 @@
     align-items: center;
     padding-bottom: 78px;
     .item{
-      width:50%;
+      width: 80%;
       display: flex;
       flex-wrap: wrap;
-      justify-content:space-between;
+      justify-content:space-around;
       align-items: center;
       margin-bottom: 63px;
       .item_title{
-        font-size:46px;
+        font-size:74px;
         font-weight:600;
         color:rgba(10,32,43,1);
-        line-height:65px;
+        line-height:104px;
       }
       .item_slogan{
         padding-top: 4px;
-        font-size:22px;
+        font-size:35px;
         font-weight:400;
         color:rgba(144,147,153,1);
-        line-height:31px;
+        line-height:49px;
       }
       .item_text{
         padding-top: 16px;
-        width:191px;
-        height:80px;
-        font-size:10px;
+        width:306px;
+        height:128px;
+        font-size:16px;
         font-weight:400;
         color:rgba(51,51,51,1);
-        line-height:14px;
+        line-height:22px;
       }
     }
   }

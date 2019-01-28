@@ -35,9 +35,9 @@ export default {
     width: 100%;
   }
   .product_content{
-    padding-top: 46px;
-    padding-bottom: 99px;
-    width: 800px;
+    padding-top: 100px;
+    padding-bottom: 159px;
+    width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
