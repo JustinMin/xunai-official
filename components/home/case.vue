@@ -118,7 +118,7 @@ export default {
     padding-right: 43px;
     padding-top: 14px;
     padding-bottom: 12px;
-    font-size:28px;
+    font-size:26px;
     font-weight: 600;
     color: rgba(10, 32, 43, 1);
     line-height: 40px;
@@ -186,7 +186,7 @@ export default {
       justify-content: center;
       .item_title{
         width:100%;
-        font-size:20px;
+        font-size:18px;
         font-weight:600;
         color:rgba(10,32,43,1);
         line-height:32px;
