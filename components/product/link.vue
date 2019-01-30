@@ -2,7 +2,7 @@
   <div class="product_link_container">
     当前位置:产品介绍
     <span>&gt;</span>
-    <nuxt-link to="/">我们的优势&gt;</nuxt-link>
+    <nuxt-link to="/product">我们的优势&gt;</nuxt-link>
     {{ title }}
   </div>
 </template>
