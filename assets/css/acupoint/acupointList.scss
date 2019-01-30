@@ -18,6 +18,7 @@
       font-size: 16px;
       font-weight: 400;
       color: rgba(10, 32, 43, 1);
+      cursor: pointer;
       &.active::after{
         content:"";
         width:33px;
