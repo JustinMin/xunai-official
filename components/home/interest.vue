@@ -65,6 +65,9 @@ export default {
       font-weight:400;
       line-height:14px;
       .item{
+        box-sizing: border-box;
+        width: 100%;
+        display: inline-block;
         padding-top: 13px;
         font-size:16px;
         color:rgba(10,32,43,1)!important;
