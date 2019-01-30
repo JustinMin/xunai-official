@@ -1,32 +1,34 @@
 <template>
   <div class="link-container">
-    <span>当前位置：<span 
-      class="link"
-      @click.stop="handelClick"
-    >优选案例
-    </span> &gt;</span>
+    <span>
+      当前位置：
+      <nuxt-link 
+        to="/" 
+        class="link">优选案例</nuxt-link>
+      &gt;
+    </span>
     <span class="currentPosition">{{ linkname }}</span>
   </div>
 </template>
 
 <script>
 export default {
-  props:{
-    linkname:{
-      type:String,
-      default(){
-        return ''
+  props: {
+    linkname: {
+      type: String,
+      default() {
+        return "";
       }
     }
   },
   methods: {
-    handelClick(){
+    handelClick() {
       this.$router.push({
-        path:'/'
-      })
+        path: "/"
+      });
     }
-  },
-}
+  }
+};
 </script>
 
 

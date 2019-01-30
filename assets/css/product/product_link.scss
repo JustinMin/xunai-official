@@ -5,4 +5,7 @@
     color:rgba(51, 51, 51, 1);
     line-height:22px;
     border-bottom: 1px dashed #999;
+    .nuxt-link-active {
+      color: #333 !important;
+    }
 }
