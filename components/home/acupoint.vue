@@ -17,44 +17,44 @@
     </nuxt-link>
     <ul class="acupoint_list">
       <li class="item">
-        <div class="acupoint_name">水沟穴</div>
-        <div class="body_name">嘴巴</div>
+        <div class="acupoint_name">头违穴</div>
+        <div class="body_name">头部</div>
+      </li>
+      <li class="item">
+        <div class="acupoint_name">角孙穴</div>
+        <div class="body_name">头部</div>
+      </li>
+      <li class="item">
+        <div class="acupoint_name">完骨穴</div>
+        <div class="body_name">头部</div>
+      </li>
+      <li class="item">
+        <div class="acupoint_name">大迎穴</div>
+        <div class="body_name">头部</div>
+      </li>
+      <li class="item">
+        <div class="acupoint_name">颊车穴</div>
+        <div class="body_name">头部</div>
       </li>
       <li class="item">
         <div class="acupoint_name">水沟穴</div>
-        <div class="body_name">嘴巴</div>
+        <div class="body_name">头部</div>
       </li>
       <li class="item">
-        <div class="acupoint_name">水沟穴</div>
-        <div class="body_name">嘴巴</div>
+        <div class="acupoint_name">下关穴</div>
+        <div class="body_name">头部</div>
       </li>
       <li class="item">
-        <div class="acupoint_name">水沟穴</div>
-        <div class="body_name">嘴巴</div>
+        <div class="acupoint_name">颧髎穴</div>
+        <div class="body_name">头部</div>
       </li>
       <li class="item">
-        <div class="acupoint_name">水沟穴</div>
-        <div class="body_name">嘴巴</div>
+        <div class="acupoint_name">听宫穴</div>
+        <div class="body_name">头部</div>
       </li>
       <li class="item">
-        <div class="acupoint_name">水沟穴</div>
-        <div class="body_name">嘴巴</div>
-      </li>
-      <li class="item">
-        <div class="acupoint_name">水沟穴</div>
-        <div class="body_name">嘴巴</div>
-      </li>
-      <li class="item">
-        <div class="acupoint_name">水沟穴</div>
-        <div class="body_name">嘴巴</div>
-      </li>
-      <li class="item">
-        <div class="acupoint_name">水沟穴</div>
-        <div class="body_name">嘴巴</div>
-      </li>
-      <li class="item">
-        <div class="acupoint_name">水沟穴</div>
-        <div class="body_name">嘴巴</div>
+        <div class="acupoint_name">眉冲穴</div>
+        <div class="body_name">头部</div>
       </li>
     </ul>
     <nuxt-link 

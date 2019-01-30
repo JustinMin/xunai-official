@@ -29,10 +29,12 @@
       :to="item.id|prefix" 
       class="item"
     >
-      <img
-        :src="item.casePic" 
-        class="acupoint_picture"
-      >
+      <div class="acupoint_picture">
+        <img
+          v-lazy="item.casePic"
+          class="current_pic"
+        >
+      </div>
       <div class="item_content">
         <div class="item_title"> {{ item.caseTitle }} </div>
         <p class="item_text">{{ item.caseDetail| limit }} </p>
@@ -178,9 +180,13 @@ export default {
     .acupoint_picture {
       width: 241px;
       height: 157px;
+      .current_pic{
+        width: 241px;
+        height: 157px;
+      }
     }
     .item_content {
-      padding-left: 13px;
+      padding-left: 20px;
       display: flex;
       flex-direction: column;
       justify-content: center;

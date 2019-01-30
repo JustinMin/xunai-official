@@ -147,7 +147,7 @@ export default {
       return this.caseList.length + 10;
     },
     setMoreData(array = []) {
-      this.caseList = [...this.caseList, ...array];
+      this.caseList =[...this.caseList.concat(array)];
     },
     setTotal(total = 0) {
       this.caseTotals = total;

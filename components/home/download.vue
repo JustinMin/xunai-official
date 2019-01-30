@@ -20,7 +20,7 @@
   background:rgba(255,255,255,1);
   box-shadow:0px 5px 10px 0px rgba(199,199,199,1);
   .title{
-    padding: 20px 0 20px 11px;
+    padding: 20px 0 11px 20px;
     font-size:28px;
     font-weight:400;
     color:rgba(10,32,43,1);
@@ -37,7 +37,7 @@
       .qrcode{
          width: 144px;
          height: 144px;
-         margin-bottom: 9px;
+         margin-bottom: 14px;
       }
       .text{
         font-size:14px;

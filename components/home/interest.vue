@@ -70,6 +70,7 @@ export default {
         display: inline-block;
         padding-top: 13px;
         font-size:16px;
+        line-height:22px;
         color:rgba(10,32,43,1)!important;
         overflow: hidden;
         text-overflow:ellipsis;
