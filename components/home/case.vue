@@ -39,7 +39,7 @@
         <div class="item_footer">
           <div class="item_footer_content">
             <img 
-              :src="item.casePic" 
+              :src="item.userPic" 
               class="item_footer_logo"
             >
             <div class="item_copany">{{ item.nickName }}</div>
@@ -115,9 +115,9 @@ export default {
     display: flex;
     justify-content: space-between;
     padding-left: 48px;
+    padding-top: 35px;
     padding-right: 43px;
-    padding-top: 14px;
-    padding-bottom: 12px;
+    padding-bottom: 40px;
     font-size:26px;
     font-weight: 600;
     color: rgba(10, 32, 43, 1);
@@ -171,7 +171,7 @@ export default {
   .item {
     padding-left: 48px;
     padding-bottom: 38px;
-    padding-right: 27px;
+    padding-right: 44px;
     display: flex;
     justify-content:space-between;
     align-items: center;
