@@ -96,10 +96,10 @@
     align-items: center;
     padding-bottom: 78px;
     .item{
-      width: 80%;
+      width: 65%;
       display: flex;
       flex-wrap: wrap;
-      justify-content:space-around;
+      justify-content:space-between;
       align-items: center;
       margin-bottom: 63px;
       .item_title{
