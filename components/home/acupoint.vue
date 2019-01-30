@@ -1,8 +1,8 @@
 <template>
   <div class="acupoint-content">
-    <div 
-      class="acupoint_title" 
-      @click="handelClick"
+    <nuxt-link 
+      class="acupoint_title"
+      to="/acupoint"
     >
       <img 
         src="~assets/images/index/home_points.png"
@@ -14,7 +14,7 @@
         找穴位
       </div>
       <div class="total">421个穴位</div>
-    </div>
+    </nuxt-link>
     <ul class="acupoint_list">
       <li class="item">
         <div class="acupoint_name">水沟穴</div>
@@ -57,16 +57,16 @@
         <div class="body_name">嘴巴</div>
       </li>
     </ul>
-    <div 
+    <nuxt-link 
       class="find_more"
-      @click="handelClick"
+      to="/acupoint"
     >
       更多穴位
       <img 
         src="~assets/images/index/more.png"
         class="more_icon"
       >
-    </div>
+    </nuxt-link>
   </div>
 </template>
 
@@ -120,6 +120,7 @@ export default {
     }
   }
   .find_more{
+    display: block;
     text-align: center;
     margin: 0 12px;
     line-height: 46px;
